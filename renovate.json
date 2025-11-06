@@ -1,0 +1,11 @@
+{
+  "extends": ["config:base"],
+  "conda": {
+    "enabled": true
+  },
+  "includePaths": ["environment.yml"],
+  "schedule": ["at any time"],
+  "prHourlyLimit": 2,
+  "labels": ["dependencies"],
+  "commitMessagePrefix": "chore(deps): "
+}
