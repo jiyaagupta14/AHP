@@ -4,8 +4,12 @@
     "enabled": true
   },
   "includePaths": ["environment.yml"],
-  "schedule": ["at any time"],
-  "prHourlyLimit": 2,
+  "schedule": ["weekly"],
+  "prHourlyLimit": 1,
   "labels": ["dependencies"],
-  "commitMessagePrefix": "chore(deps): "
+  "commitMessagePrefix": "chore(deps): ",
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "ignoreDeps": ["python"]  // Optional: Ignore Python if you don't want major version bumps
 }
